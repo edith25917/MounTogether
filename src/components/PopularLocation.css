@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+.icon{
+  width:1em;
+  height:1em;
+  color:rgb(109, 109, 109) !important;
+  margin-right:3px;
+}
+
+svg{
+  margin-bottom:3px;
+}
+
+.paragraph{
+  color:gray;
+}
+
+.paragraph::-webkit-scrollbar {
+      width: 8px;
+}
+.paragraph::-webkit-scrollbar-track {
+      /* background-color: #a8a8a821; */
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+.paragraph::-webkit-scrollbar-thumb {
+      background-color: rgba(212, 203, 164, 0.322); 
+      border-radius: 99em;
+      height: 20px;
+} /* this will style the thumb, ignoring the track */
+ 
+.paragraph::-webkit-scrollbar-button {
+      background-color: #7c292900;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+.paragraph::-webkit-scrollbar-corner {
+      background-color: rgba(0, 0, 0, 0);
+      display: none;
+}
+
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tag {
+  width: fit-content;
+  /* background: lightblue; */
+  vertical-align:bottom;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  width: 64%;
+  min-width: 320px;
+  align-items: center;
+}
+.title svg {
+  width: 2em;
+  height: 2em;
+  color: rgb(73, 73, 73);
+}
+h3 {
+  font-weight: bold;
+  text-align: left;
+  color: rgb(99, 102, 104);
+}
+h3::first-letter {
+  font-size: 1.3em;
+}

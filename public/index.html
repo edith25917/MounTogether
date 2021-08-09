@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <script src="https://kit.fontawesome.com/0a6f29f5af.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/af.min.js">
+  </script>
+
+  <!-- leaflet map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+
+
+
+
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+
+  <div id="app"></div>
+
+  <!-- <a href="test.html">link to test.html</a> -->
+  <!-- built files will be auto injected -->
+</body>
+
+<script type="text/javascript">
+  const changeText = function () {
+    document.getElementById("title").innerHTML = "Change successfully";
+
+  }
+</script>
+
+<style>
+  .paragraph::before {
+    content: "　　"
+  }
+
+  .picContainer {
+    position: relative;
+  }
+
+  .picInCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 150%;
+    max-height: 150%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+
+  .bk {
+    width: 100%;
+    opacity: 70%;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .sample {
+    /* background: rgb(223, 173, 80); */
+    margin-top: 10px !important;
+    font-size: 2em;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  div hr {
+    /* color: tomato; */
+    width: 50%;
+  }
+</style>
+
+</html>
